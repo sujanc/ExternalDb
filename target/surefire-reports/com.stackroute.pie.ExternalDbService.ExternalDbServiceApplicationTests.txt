@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.stackroute.pie.ExternalDbService.ExternalDbServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.822 s <<< FAILURE! - in com.stackroute.pie.ExternalDbService.ExternalDbServiceApplicationTests
+contextLoads(com.stackroute.pie.ExternalDbService.ExternalDbServiceApplicationTests)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'externalDbController': Unsatisfied dependency expressed through method 'getPolicies' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.web.bind.annotation.PathVariable(name="", value="insurerName", required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.web.bind.annotation.PathVariable(name="", value="insurerName", required=true)}
+
